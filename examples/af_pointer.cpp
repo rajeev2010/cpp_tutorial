@@ -1,11 +1,14 @@
 // Program to illustrate pointers.
+//
+// Rajeev Singh
+// 2013-03-28
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 10;
     int *np = NULL;
+    int n = 10;
 
     cout << "Initial" << endl
          << "n   = " << n   << endl

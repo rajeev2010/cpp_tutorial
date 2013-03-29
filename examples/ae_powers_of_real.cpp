@@ -1,4 +1,7 @@
 // Program to calculate powers of given integer.
+//
+// Rajeev Singh
+// 2013-03-27
 
 #include <iostream>
 #include <cmath>
@@ -16,5 +19,5 @@ int main() {
          << "Cube         = " << pow(given_number,3) << endl
          << "Forth power  = " << pow(given_number,4) << endl;
 
-    return 1;
+    return 0;
 }

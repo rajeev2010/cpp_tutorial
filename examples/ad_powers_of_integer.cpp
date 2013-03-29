@@ -1,4 +1,7 @@
 // Program to calculate powers of given integer.
+//
+// Rajeev Singh
+// 2013-03-27
 
 #include <iostream>
 #include <cmath>

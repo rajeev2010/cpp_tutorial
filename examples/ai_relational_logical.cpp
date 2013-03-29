@@ -1,4 +1,7 @@
 // program to illustrate logical and relational operators.
+//
+// Rajeev Singh
+// 2013-03-28
 
 #include <iostream>
 using namespace std;
