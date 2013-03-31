@@ -14,8 +14,18 @@ int main() {
         n = n / n;
     }
 
-    if ( n < 0 ) n += 5; // NOTE: trivial block!
-    else         n -= 6;
+    if ( n < 0 ) {
+        n += 5; // NOTE: trivial block!
+        cout << "hello " << n << endl;
+    }
+    else if ( n %2 == 0 ) {
+        n += 1;
+        cout << "hello " << n << endl;
+    }
+    else {
+        n -= 6;
+        cout << "hello " << n << endl;
+    }
    
     cout << "n = " << n << endl;
 

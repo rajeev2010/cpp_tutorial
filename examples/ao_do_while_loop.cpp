@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     int n = 1;
-    int i = 1;
+    int i = 100;
 
     do {
         n *= i;

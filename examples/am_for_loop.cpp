@@ -10,8 +10,10 @@ int main() {
     int n = 1;
 
     for (int i=1; i<10; i++) {
-        n *= i;
-        cout << "n = " << n << endl;
+        if (i>5) {
+            n *= i;
+            cout << "n = " << n << endl;
+        }
     }
 
     return 0;
