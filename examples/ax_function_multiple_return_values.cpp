@@ -9,16 +9,7 @@ using namespace std;
 
 void
 min_max ( const int n1, const int n2,
-  int & min, int & max ) {
-    if ( n1 < n2 ) {
-        min = n1;
-        max = n2;
-    }
-    else {
-        min = n2;
-        max = n1;
-    }
-}
+  int & min, int & max );
 
 int main() {
     int m1, m2, min, max;
@@ -34,3 +25,17 @@ int main() {
 
     return 0;
 }
+
+void
+min_max ( const int n1, const int n2,
+  int & min, int & max ) {
+    if ( n1 < n2 ) {
+        min = n1;
+        max = n2;
+    }
+    else {
+        min = n2;
+        max = n1;
+    }
+}
+
