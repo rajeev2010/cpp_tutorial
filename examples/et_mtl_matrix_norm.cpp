@@ -1,0 +1,27 @@
+/* program to illustrate the use of mtl
+ *
+ * example taken from mtl document
+ *
+ * Rajeev Singh
+ * 2013-04-17
+ *
+ */
+
+#include <iostream>
+#include <boost/numeric/mtl/mtl.hpp>
+
+int main(int, char**)
+{
+    using namespace mtl;
+    
+    const unsigned n= 10;
+    dense2D<float, matrix::parameters<col_major> > B(n, n);
+
+    matrix::hessian_setup(B, 1.0);
+    
+    std::cout << "one_norm(B) is " << one_norm(B)<< "\n";
+    std::cout << "infinity_norm(B) is " << infinity_norm(B)<< "\n";
+    std::cout << "frobenius_norm(B) is " << frobenius_norm(B)<< "\n";
+    
+    return 0;
+}

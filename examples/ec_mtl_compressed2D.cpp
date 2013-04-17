@@ -25,6 +25,7 @@ int main(int, char**)
     
     // Element access is allowed for reading
     std::cout << "A[3][2] is " << A[3][2] << "\n\n";
+    std::cout << "A[3][1] is " << A[3][1] << "\n\n";
     
     // CCS matrix
     compressed2D<float, matrix::parameters<tag::col_major> > B(10, 10);

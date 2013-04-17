@@ -20,7 +20,7 @@ int main(int, char**)
     dense2D<double>               A(10, 10);
 
     // Matrices are not initialized by default
-    A= 0.0;
+    A= -5.0;
 
     // Assign a value to a matrix element
     A(2, 3)= 7.0;

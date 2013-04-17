@@ -25,6 +25,7 @@ int main(int, char**)
     // Initialize matrices
     A= 3.0; B= 4.0; C= 5.0; D= 6.0;
 
+    std::cout << "A = " << A << std::endl;
     // vector= multi_vector * vector
     v= A * w;
     std::cout << "v = " << v << std::endl;
@@ -41,7 +42,8 @@ int main(int, char**)
     A.vector(0)= B * A.vector(1);       
     std::cout << "A.vector(0) = " << A.vector(0) << std::endl;
 
-    // Orthogonalize multi_vector
+    // Orthogonalize multi_vectorq
+    A(0,0) = 1;
     orth(A);
     std::cout << "A = " << A << std::endl;
 
