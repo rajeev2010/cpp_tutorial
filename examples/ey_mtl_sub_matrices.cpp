@@ -30,6 +30,10 @@ int main(int, char**)
     dense_vector<cdouble>   v_c(A[iall][0]);
 
     std::cout << "col-vector v_c is\n" << v_c << "\n";
+    v_c[0] = 1;
+    std::cout << "sub_matrix(A, 0, 2, 0, 7) is\n" 
+              << with_format(sub_matrix(A, 0, 2, 0, 7), 7, 1) << "\n";
+
 
     //row-vector from matrix
     dense_vector<cdouble, mtl::vector::parameters<tag::row_major> > v_r(A[0][iall]);
@@ -40,6 +44,9 @@ int main(int, char**)
     RowInMatrix<dense2D<cdouble> >::type v_r2(A[0][iall]);
 
     std::cout << "row-vector v_r2 is\n" << v_r2 << "\n";
+    v_r2[0] = 1;
+    std::cout << "sub_matrix(A, 0, 2, 0, 7) is\n" 
+              << with_format(sub_matrix(A, 0, 2, 0, 7), 7, 1) << "\n";
 
     //submatrix from matrix per begin and end of row and column
     dense2D<cdouble> B= sub_matrix(A, 2, 4, 1, 7);

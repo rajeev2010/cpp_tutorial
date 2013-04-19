@@ -7,8 +7,7 @@
  *
  */
 
-// Filename: matrix_indirect.cpp (part of MTL4)
-#include <iostream>
+// Filename: matrix_indirect.cpp (part of MTL4) #include <iostream>
 #include <boost/numeric/mtl/mtl.hpp>
 
 using namespace std;  
@@ -26,7 +25,9 @@ int main(int, char**)
          << "The sub-matrix A[{2, 0, 3}][{2, 1}] is\n" << A[rows][cols];
 
     mtl::matrix::indirect<matrix> B(A[rows][cols]);
+    //B[0][0] = 10;
     cout << "B is\n" << B;
+    cout << "A is\n" << A;
 
     return 0;
 }

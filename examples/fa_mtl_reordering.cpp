@@ -18,7 +18,7 @@ int main(int, char**)
     dense2D<double>  A(array), B2, B3;
 
     // Creating a reordering matrix from a vector (or an array respectively)
-    int indices[]= {2, 1};
+    int indices[]= {1, 0};
     matrix::traits::reorder<>::type R= matrix::reorder(indices);
     std::cout << "\nR =\n" << R;    
 
