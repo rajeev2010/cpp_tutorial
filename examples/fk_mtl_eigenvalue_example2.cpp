@@ -43,7 +43,7 @@ int main() {
         -800, 631, -144; //EWs: 3,4,10  
         
     mtl::matrix::eigenvalue_solver<dMatrix> E3(M3);
-    E3.setMaxIteration(10);
+    E3.setMaxIteration(1);
     E3.setTolerance(1.0e-10);
     E3.calc();
     cout << "M3(providing both): " 

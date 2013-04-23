@@ -31,10 +31,12 @@ int main(int, char**)
     b= A * x; x= 0;
     
     // Termination criterion: r < 1e-6 * b or N iterations
-    noisy_iteration<double>       iter(b, 500, 1.e-6);
+    noisy_iteration<double>       iter(b, 500, 1.e-8);
     
     // Solve Ax == b with left preconditioner P
     bicgstab(A, x, b, P, iter);
+
+    std::cout << x << std::endl;
 
     return 0;
 }
