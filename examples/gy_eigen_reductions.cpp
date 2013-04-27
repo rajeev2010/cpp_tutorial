@@ -3,7 +3,7 @@
  * example taken from eigen document
  *
  * Rajeev Singh
- * 2013-04-19
+ * 2013-04-27
  *
  */
 
@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {
   Eigen::Matrix2d mat;
-  mat << 10, 2,
+  mat << 1, 2,
          3, 4;
   cout << "Here is mat.sum():       " << mat.sum()       << endl;
   cout << "Here is mat.prod():      " << mat.prod()      << endl;

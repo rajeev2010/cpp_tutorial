@@ -15,7 +15,8 @@ using namespace Eigen;
 
 int main() { 
     Matrix3f m = Matrix3f::Random();
-    std::ptrdiff_t i, j;
+    //std::ptrdiff_t i, j;
+    int i, j;
     float minOfM = m.minCoeff(&i,&j);
     cout << "Here is the matrix m:\n" << m << endl;
     cout << "Its minimum coefficient (" << minOfM 

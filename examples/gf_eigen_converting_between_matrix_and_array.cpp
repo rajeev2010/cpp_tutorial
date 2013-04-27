@@ -32,4 +32,6 @@ int main()
   cout << "-- With cwiseProduct: --" << endl << result << endl << endl;
   result = m.array() + 4;
   cout << "-- Array m + 4: --" << endl << result << endl << endl;
+  //result = m + 4;
+  //cout << "-- Matrix m + 4: --" << endl << result << endl << endl;
 }

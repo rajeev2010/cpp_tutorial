@@ -21,4 +21,5 @@ int main()
   double dp = v.adjoint()*w; // automatic conversion of the inner product to a scalar
   cout << "Dot product via a matrix product: " << dp << endl;
   cout << "Cross product:\n" << v.cross(w) << endl;
+  cout << "Cross product:\n" << w.cross(v) << endl;
 }
