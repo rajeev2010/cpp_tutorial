@@ -19,7 +19,7 @@ int main()
     m << 1, 2, 3,
          4, 5, 6,
          7, 8, 9;
-    std::cout << m;
+    std::cout << m << std::endl;
 
     RowVectorXd vec1(3);
     vec1 << 1, 2, 3;
@@ -45,7 +45,7 @@ int main()
     m.row(0) << 1, 2, 3;
     m.block(1,0,2,2) << 4, 5, 7, 8;
     m.col(2).tail(2) << 6, 9;                   
-    std::cout << m;
+    std::cout << m << std::endl;
     }
 
     return 0;
