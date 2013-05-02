@@ -3,7 +3,7 @@
  * example taken from armadillo document
  *
  * Rajeev Singh
- * 2013-05-01
+ * 2013-05-02
  *
  */
 
@@ -15,14 +15,19 @@ using namespace arma;
 
 int main(int argc, char** argv)
 {
-mat A(5,5);
-A.eye();
-cout << "A:" << endl << A << endl << endl;
 
-mat B;
-B.eye(5,5);
-B(1,2) = 2;
-cout << "B:" << endl << B << endl << endl;
+wall_clock timer;
+
+mat A = randu<mat>(4,4);
+mat B = randu<mat>(4,4);
+mat C;
+
+timer.tic();
+for(uword i=0; i<100000; ++i)
+  C = A + B + A + B;
+
+double n_secs = timer.toc();
+cout << "took " << n_secs << " seconds" << endl;
 
 return 0;
 }

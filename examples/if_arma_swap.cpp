@@ -3,7 +3,7 @@
  * example taken from armadillo document
  *
  * Rajeev Singh
- * 2013-05-01
+ * 2013-05-02
  *
  */
 
@@ -15,14 +15,18 @@ using namespace arma;
 
 int main(int argc, char** argv)
 {
-mat A(5,5);
-A.eye();
-cout << "A:" << endl << A << endl << endl;
+mat A = zeros<mat>(4,5);
+mat B =  ones<mat>(6,7);
 
-mat B;
-B.eye(5,5);
-B(1,2) = 2;
-cout << "B:" << endl << B << endl << endl;
+A.swap(B);
+A.print("\n\nA:");
+B.print("\n\nB:");
+
+mat X = randu<mat>(5,5);
+X.print("\n\nX:");
+
+X.swap_rows(0,4);
+X.print("\n\nX:");
 
 return 0;
 }

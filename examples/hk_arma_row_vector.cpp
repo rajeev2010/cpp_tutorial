@@ -20,7 +20,8 @@ int main(int argc, char** argv)
 rowvec x(10);
 cout << "x:" << endl << x << endl;
 
-rowvec y = zeros<mat>(1,10);
+//rowvec y = zeros<mat>(1,10);
+rowvec y = zeros<rowvec>(10);
 cout << "y:" << endl << y << endl;
 
 mat A = randu<mat>(10,10);

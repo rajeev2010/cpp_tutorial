@@ -3,7 +3,7 @@
  * example taken from armadillo document
  *
  * Rajeev Singh
- * 2013-05-01
+ * 2013-05-02
  *
  */
 
@@ -15,14 +15,14 @@ using namespace arma;
 
 int main(int argc, char** argv)
 {
-mat A(5,5);
-A.eye();
-cout << "A:" << endl << A << endl << endl;
+vec A = randu<vec>(5);
+A.print("\n\nA:");
 
-mat B;
-B.eye(5,5);
-B(1,2) = 2;
-cout << "B:" << endl << B << endl << endl;
+mat X = toeplitz(A);
+X.print("\n\nX:");
+
+mat Y = circ_toeplitz(A);
+Y.print("\n\nY:");
 
 return 0;
 }

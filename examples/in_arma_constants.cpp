@@ -3,7 +3,7 @@
  * example taken from armadillo document
  *
  * Rajeev Singh
- * 2013-05-01
+ * 2013-05-02
  *
  */
 
@@ -15,14 +15,15 @@ using namespace arma;
 
 int main(int argc, char** argv)
 {
-mat A(5,5);
-A.eye();
-cout << "A:" << endl << A << endl << endl;
+cout << "2.0 * pi = " << 2.0 * datum::pi << endl;
 
-mat B;
-B.eye(5,5);
-B(1,2) = 2;
-cout << "B:" << endl << B << endl << endl;
+cout << "speed of light = " << datum::c_0 << endl;
+
+cout << "log_max for floats = ";
+cout << fdatum::log_max << endl;
+
+cout << "log_max for doubles = ";
+cout << datum::log_max << endl;
 
 return 0;
 }
